@@ -11,7 +11,7 @@ const Navbar = ({darkMode, isOpen, toggleMenu, toggleTheme}) => {
             <div className="flex items-center justify-between w-full">
                 <a href='/'
                 className="text-2xl font-bold text-blue-500 cursor-pointer"
-                >CodeWave
+                >PRince
                 </a>
 
                 <ul className='hidden md:flex gap-10 text-lg text-slate-800 dark:text-gray-200'>

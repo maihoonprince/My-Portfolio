@@ -7,7 +7,7 @@ export { default as Express } from "./express.svg";
 export { default as Nextjs } from "./nextjs.svg";
 export { default as Nextjs2 } from "./nextjs2.svg";
 
-export { default as Major } from "./major.png";
+// export { default as Major } from "./major.png";
 
 export { default as CSS3 } from "./css3.svg";
 export { default as HTML5 } from "./html.svg";
