@@ -2,6 +2,15 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
+import About from "./components/About"
+import Skills from "./components/Skills";
+import Works from "./components/Works";
+import Footer from "./components/Footer";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -33,9 +42,33 @@ function App() {
         </section>
       </div>
 
-      <section className="w-full bg-[#061130] py-20">
+      <section 
+      className="w-full bg-[#061130] py-20">
         <Projects />
       </section>
+
+      <section id='about'
+      className='w-full px-0 lg:px-5 2xl:px-40 py-10 lg:py-0 dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e]'>
+        <About />
+      </section>
+
+      <section
+          id='skills'
+          className='w-full px-0 lg:px-5 2xl:px-40 py-10 lg:py-0 dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#05174e] to-[#030a1c]'
+        >
+          <Skills />
+        </section>
+
+        <section
+          id='projects'
+          className='w-full px-0 lg:px-5 2xl:px-40 py-10 lg:py-0 dark:bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#030a1c] to-[#05174e]'
+        >
+          <Works />
+        </section>
+
+        <div className='w-full px-0 lg:px-5 2xl:px-40 py-10 lg:py-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-[#05174e] to-[#030a1c] '>
+          <Footer />
+        </div>
      </div>
     </div>
   );
